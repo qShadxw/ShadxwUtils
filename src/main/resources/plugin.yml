@@ -1,0 +1,81 @@
+name: ShadxwUtils
+version: '${project.version}'
+main: uk.co.tmdavies.shadxwutils.ShadxwUtils
+api-version: '1.19'
+commands:
+  shadxwutils:
+    description: 'Admin commands related to the plugin.'
+    aliases: [shadxw, shadxwutil, shadxwutils]
+    permission: shadxwutils.admin
+    usage: /<command>
+
+  rusticresourcepack:
+    description: 'Admin commands related to the resource pack.'
+    aliases: [rrp]
+    permission: shadxwutils.resourcepack
+    usage: /<command>
+
+  modifyentity:
+    description: 'Admin commands related to modifying entities.'
+    aliases: [modent]
+    permission: shadxwutils.modifyentity
+    usage: /<command>
+
+  cancelmodify:
+    description: 'Cancels the current entity modification.'
+    aliases: [cancelmod]
+    permission: shadxwutils.cancelmodify
+    usage: /<command>
+
+  spawndisplay:
+    description: 'Spawns a display entity.'
+    aliases: [sd]
+    permission: shadxwutils.spawndisplay
+    usage: /<command>
+
+  deletedisplay:
+    description: 'Deletes a display entity.'
+    aliases: [dd]
+    permission: shadxwutils.deletedisplay
+    usage: /<command>
+
+permissions:
+  shadxwutils.*:
+    description: 'Allows the player to use all ShadxwUtils commands'
+    default: op
+    children:
+      - shadxwutils.admin
+      - shadxwutils.resourcepack
+      - shadxwutils.bypassvpn
+      - shadxwutils.modifyentity
+      - shadxwutils.cancelmodify
+      - shadxwutils.spawndisplay
+      - shadxwutils.deletedisplay
+
+  shadxwutils.admin:
+    description: 'Allows the player to use admin commands'
+    default: op
+
+  shadxwutils.resourcepack:
+    description: 'Allows the player to use the Rustic Resource Pack'
+    default: op
+
+  shadxwutils.bypassvpn:
+    description: 'Allows the player to bypass the VPN check'
+    default: op
+
+  shadxwutils.modifyentity:
+    description: 'Allows the player to modify entities'
+    default: op
+
+  shadxwutils.cancelmodify:
+    description: 'Allows the player to cancel entity modifications'
+    default: op
+
+  shadxwutils.spawndisplay:
+    description: 'Allows the player to spawn display entities'
+    default: op
+
+  shadxwutils.deletedisplay:
+    description: 'Allows the player to delete display entities'
+    default: op
