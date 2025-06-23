@@ -20,3 +20,4 @@ And the repo, note the version is the most recent tag in releases.
 	    <version>1.0</version>
 	</dependency>
 ```
+[![](https://jitpack.io/v/qShadxw/ShadxwUtils.svg)](https://jitpack.io/#qShadxw/ShadxwUtils)
